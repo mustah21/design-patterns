@@ -8,6 +8,6 @@ public abstract class CheckBox {
         this.text = text;
     }
     public abstract void display();
-
+    public abstract void setText(String text);
 
 }

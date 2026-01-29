@@ -14,5 +14,8 @@ public class ButtonB extends MyButton {
         System.out.println("~  " + text + "  ~");
         System.out.println("~─────────────────────~");
     }
-
+    @Override
+    public void setText(String text) {
+        this.text = text;
+    }
 }

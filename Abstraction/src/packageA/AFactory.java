@@ -5,7 +5,7 @@ import mainroot.UIFactory;
 public class AFactory extends UIFactory {
 
     @Override
-    public ButtonA createButton(String text){
+    public ButtonA createButton(String text) {
         return new ButtonA(text);
     }
 
@@ -19,5 +19,7 @@ public class AFactory extends UIFactory {
         return new CheckBoxA(text);
     }
 
-
 }
+
+
+

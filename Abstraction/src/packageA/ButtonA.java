@@ -9,14 +9,14 @@ public class ButtonA extends MyButton {
     }
 
     @Override
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    @Override
     public void display() {
         System.out.println("┌─────────────────────┐");
         System.out.println("│  " + text + "  │");
         System.out.println("└─────────────────────┘");
+    }
+
+    @Override
+    public void setText(String text) {
+        this.text = text;
     }
 }

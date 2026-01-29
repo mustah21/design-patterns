@@ -15,4 +15,9 @@ public class CheckBoxA extends CheckBox {
         System.out.println("└─────────────────────┘");
     }
 
+    @Override
+    public void setText(String text) {
+        this.text = text;
+    }
+
 }

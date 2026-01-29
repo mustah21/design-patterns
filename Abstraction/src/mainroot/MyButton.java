@@ -7,7 +7,7 @@ public abstract class MyButton {
     public MyButton(String text) {
         this.text = text;
     }
-
     public abstract void display();
+    public abstract void setText(String text);
 
 }

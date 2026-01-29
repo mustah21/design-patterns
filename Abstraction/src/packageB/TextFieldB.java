@@ -14,4 +14,8 @@ public class TextFieldB extends TextField {
         System.out.println("~  " + text + "  ~");
         System.out.println("~─────────────────────~");
     }
+    @Override
+    public void setText(String text) {
+        this.text = text;
+    }
 }

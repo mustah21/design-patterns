@@ -20,4 +20,5 @@ public class BFactory extends UIFactory {
         return new CheckBoxB(text);
     }
 
+
 }

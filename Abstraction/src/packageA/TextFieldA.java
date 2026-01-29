@@ -14,4 +14,7 @@ public class TextFieldA extends TextField {
         System.out.println("│  " + text + "  │");
         System.out.println("└─────────────────────┘");
     }
+    public void setText(String text) {
+        this.text = text;
+    }
 }
