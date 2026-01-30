@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Abstraction/Abstraction.iml" filepath="$PROJECT_DIR$/Abstraction/Abstraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1. Factory-Method/1. Factory-Method.iml" filepath="$PROJECT_DIR$/1. Factory-Method/1. Factory-Method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2. Abstraction/2. Abstraction.iml" filepath="$PROJECT_DIR$/2. Abstraction/2. Abstraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3. Composite/3. Composite.iml" filepath="$PROJECT_DIR$/3. Composite/3. Composite.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Assignments.iml" filepath="$PROJECT_DIR$/.idea/Assignments.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Factory-Method/Factory-Method.iml" filepath="$PROJECT_DIR$/Factory-Method/Factory-Method.iml" />
     </modules>
   </component>
 </project>
