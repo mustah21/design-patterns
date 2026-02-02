@@ -50,7 +50,7 @@ public class Main {
         accounting.removed(em2); // momin
         salesTeamA.removed(em5); // vivek
 
-        System.out.println("\n----After removing vivek and momin should not appear in the list anymore----\n");
+        System.out.println("\n----After removing vivek and momin should not appear in the list anymore and the salary shown should be decreased----\n");
 
         finance.printXML();
         sales.printXML();

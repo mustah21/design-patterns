@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/1. Factory-Method/1. Factory-Method.iml" filepath="$PROJECT_DIR$/1. Factory-Method/1. Factory-Method.iml" />
       <module fileurl="file://$PROJECT_DIR$/2. Abstraction/2. Abstraction.iml" filepath="$PROJECT_DIR$/2. Abstraction/2. Abstraction.iml" />
       <module fileurl="file://$PROJECT_DIR$/3. Composite/3. Composite.iml" filepath="$PROJECT_DIR$/3. Composite/3. Composite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4.Observer.iml" filepath="$PROJECT_DIR$/4.Observer.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Assignments.iml" filepath="$PROJECT_DIR$/.idea/Assignments.iml" />
     </modules>
   </component>
