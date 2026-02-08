@@ -39,6 +39,7 @@ public class WeatherObserving implements Observer {
 
             Thread.sleep(2000);
             weatherStation.removeObserver(obs1);
+            weatherStation.removeObserver(obs6);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

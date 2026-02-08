@@ -46,7 +46,6 @@ public class Logger {
     }
 
     public void setFileName(String newFileName) {
-
         try {
             close();
             file = new File(newFileName);

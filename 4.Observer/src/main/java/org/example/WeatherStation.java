@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class WeatherStation implements Runnable{
+public class WeatherStation implements Runnable {
     private List<Observer> observers = new ArrayList<>();
     private int temperature;
     private static final int MIN_TEMP = -50;
@@ -42,10 +42,11 @@ public class WeatherStation implements Runnable{
             notifyObservers();
 
             try {
-                Thread.sleep((random.nextInt(5)) * 1000);
+                Thread.sleep((random.nextInt(3) + 1) * 1000);
             } catch (InterruptedException e) {
                 break;
             }
+
         }
     }
 }
