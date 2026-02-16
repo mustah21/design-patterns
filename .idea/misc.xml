@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/4.Observer/pom.xml" />
         <option value="$PROJECT_DIR$/5.Singelton/pom.xml" />
+        <option value="$PROJECT_DIR$/6.Decorator/pom.xml" />
       </list>
     </option>
   </component>
