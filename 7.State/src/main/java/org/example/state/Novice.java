@@ -58,7 +58,7 @@ public class Novice extends State {
 
                     this.getCharacter().setState(new Intermediate(this.getCharacter()));
                     System.out.println(getCharacter().getName() + "'s" +
-                            " experience points: , " + getCharacter().getExperiencePoints()
+                            " experience points: " + getCharacter().getExperiencePoints()
                             + ", Health points: " + getCharacter().getHealthPoints()
                             + ", Level: " + getCharacter().getState().toString());
                 } else {
