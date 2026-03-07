@@ -10,7 +10,7 @@ public class Darts extends Game {
     int[] scores;
     int numberOfPlayers;
     int currentRound = 1;
-    int maxRounds = 20;
+    int maxRounds = 5;
     Throw throwing = new Throw();
 
     @Override

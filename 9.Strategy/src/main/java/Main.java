@@ -6,8 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Sorter sorter = new Sorter(new InsertionSort()  );
-
+        Sorter sorter = new Sorter(new InsertionSort());
+        // other classes like BubbleSort and SelectionSort
 
         Random random = new Random(30);
         int[] dataset1 = new int[31];
