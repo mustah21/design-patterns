@@ -79,7 +79,6 @@ They're typically split into three categories, as defined by the Gang of Four (G
 | Memento | Capture and restore object state | ✅ |
 | State | Change behavior when internal state changes | ✅ |
 | Visitor | Separate algorithms from the objects they operate on | ✅ |
-| Interpreter | Define a grammar and interpreter for a language | 🔜 |
 
 ---
 
