@@ -13,9 +13,7 @@ A personal exploration of software design patterns — what they solve, when to 
   - [Creational](#creational)
   - [Structural](#structural)
   - [Behavioral](#behavioral)
-- [How This Repo Is Organized](#how-this-repo-is-organized)
 - [Getting Started](#getting-started)
-- [Contributing / Notes to Self](#contributing--notes-to-self)
 
 ---
 
