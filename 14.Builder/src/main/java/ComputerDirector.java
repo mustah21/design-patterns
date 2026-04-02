@@ -6,7 +6,7 @@ public class ComputerDirector {
         this.computerBuilder = computerBuilder;
     }
 
-    public void makeGamingComputer() {
+    public void makeComputer() {
         computerBuilder.buildCPU();
         computerBuilder.buildRAM();
         computerBuilder.buildGraphicsCard();
@@ -14,11 +14,5 @@ public class ComputerDirector {
         computerBuilder.buildProcessor();
     }
 
-    public void makingOfficeComputer() {
-        computerBuilder.buildCPU();
-        computerBuilder.buildRAM();
-        computerBuilder.buildGraphicsCard();
-        computerBuilder.buildHardDrive();
-        computerBuilder.buildProcessor();
-    }
+
 }
