@@ -76,7 +76,12 @@ public class Controller {
         if (index >= 0 && index < historyList.size()) {
             IMemento currState = historyList.get(index);
             model.restoreState(currState);
+//            model.removeAllStatesAfter(); // add this method in model so it removes all the lists before the one selected it
             gui.updateGui();
+
+
+
         }
     }
+
 }

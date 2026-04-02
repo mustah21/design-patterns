@@ -85,9 +85,7 @@ public class Gui extends Application {
             if (selectedIndex >= 0) {
                 controller.jumpToHistory(selectedIndex);
                 updateGui();
-//                historyStage.hide();
             }
-
         });
 
         historyButton.setOnAction(event -> {
