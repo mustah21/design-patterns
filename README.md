@@ -85,8 +85,7 @@ They're typically split into three categories, as defined by the Gang of Four (G
 
 ## Getting Started
 
-Browse any pattern folder that interests you. Each has its own README to explain the concept before you look at the code.
-
+Browse any pattern folder that interests you.
 ```bash
 git clone https://github.com/mustah21/design-patterns.git
 cd design-patterns
