@@ -42,7 +42,7 @@ They're typically split into three categories, as defined by the Gang of Four (G
 | Singleton | Ensure a class has only one instance | ✅ |
 | Factory Method | Let subclasses decide which class to instantiate | ✅ |
 | Abstract Factory | Create families of related objects | ✅ |
-| Builder | Construct complex objects step by step | 🔜 |
+| Builder | Construct complex objects step by step | ✅ |
 | Prototype | Clone existing objects | 🔜 |
 
 ---
@@ -53,7 +53,7 @@ They're typically split into three categories, as defined by the Gang of Four (G
 
 | Pattern | Description | Status |
 |---|---|---|
-| Adapter | Make incompatible interfaces work together | 🔜 |
+| Adapter | Make incompatible interfaces work together | ✅ |
 | Bridge | Decouple abstraction from implementation | 🔜 |
 | Composite | Treat individual objects and groups uniformly | ✅ |
 | Decorator | Add responsibilities to objects dynamically | ✅ |
@@ -85,8 +85,7 @@ They're typically split into three categories, as defined by the Gang of Four (G
 
 ## Getting Started
 
-Browse any pattern folder that interests you. Each has its own README to explain the concept before you look at the code.
-
+Browse any pattern folder that interests you.
 ```bash
 git clone https://github.com/mustah21/design-patterns.git
 cd design-patterns
