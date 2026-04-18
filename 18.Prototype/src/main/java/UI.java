@@ -64,18 +64,20 @@ public class UI {
 
     private void modifyRecommendation() {
         viewRecommendations();
-        System.out.print("Please enter the index you would like to modify: ");
-        int index = 0;
-        if (scan.hasNextInt()) {
-            index = scan.nextInt();
-        } else {
-            System.out.println("Invalid index.");
-        }
         if (saved.isEmpty()) {
             System.out.println("No recommendations saved.");
         }
+        int recIndex = -1;
+        while (true) {
+            System.out.print("Please enter the index you would like to modify: ");
+            recIndex = Integer.parseInt(scan.nextLine());
+            if (recIndex >= 0 && recIndex < saved.size()) {
+                break;
+            }
+            System.out.println("Invalid index, try again.");
+        }
 
-        Recommendation clone = saved.get(index).clone();
+        Recommendation clone = saved.get(recIndex).clone();
         scan.nextLine();
         System.out.println("Would you like to modify the target audience?(y/n)");
         String userR = scan.nextLine();
@@ -96,7 +98,11 @@ public class UI {
                 case "r":
                     System.out.print("Enter book index to remove: ");
                     int removeIndex = Integer.parseInt(scan.nextLine());
-                    clone.removeBook(removeIndex);
+                    if (removeIndex >= 0 && removeIndex < clone.getBooks().size()) {
+                        clone.removeBook(removeIndex);
+                    }  else {
+                        System.out.println("Invalid index.");
+                    }
                     break;
                 case "e":
                     break label;
@@ -110,7 +116,7 @@ public class UI {
 
     public void selection() {
         String[] options = {
-                "Create recommendations\n", "View existing recommendations\n", "Modify and clone recommendation\n", "Exit\n"
+                "Create recommendations\n", "View existing recommendations\n", "Clone and modify recommendation\n", "Exit\n"
         };
 
         while (true) {
