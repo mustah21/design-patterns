@@ -23,8 +23,8 @@ public class Recommendation implements Cloneable {
     List<Book> getBooks() {
         return books;
     }
-    void removeBook(Book book) {
-        books.remove(book);
+    void removeBook(int index) {
+        books.remove(index);
     }
 
     public Recommendation clone () {

@@ -54,9 +54,9 @@ public class UI {
         }
         for (int i = 0; i < saved.size(); i++) {
             Recommendation r = saved.get(i);
-            System.out.println(i + ". [" + r.getTargetAudience() + "]");
+            System.out.println(i + ". [" + r.getTargetAudience() + "]");;
             for (Book b : r.getBooks()) {
-                System.out.println("   - " + b.getTitle() + " by " + b.getAuthor());
+                System.out.println(" - " + b.getIndex() + ": "+ b.getTitle() + " by " + b.getAuthor());;;
             }
         }
     }
@@ -84,14 +84,26 @@ public class UI {
             System.out.println("Enter the new target audience: ");
             clone.setTargetAudience(scan.nextLine());
         }
-        System.out.println("Add a book? (y/n): ");
-        if (scan.nextLine().equals("y")) {
-            String[] data = bookAdding();
-            clone.addBook(new Book(data[0], data[1], data[2], data[3]));
+        label:
+        while (true) {
+            System.out.println("Add a book (press a)? Remove a book (press r): (Press e to exit)");
+            String action = scan.nextLine();
+            switch (action) {
+                case "a":
+                    String[] data = bookAdding();
+                    clone.addBook(new Book(data[0], data[1], data[2], data[3]));
+                    break;
+                case "r":
+                    System.out.print("Enter book index to remove: ");
+                    int removeIndex = Integer.parseInt(scan.nextLine());
+                    clone.removeBook(removeIndex);
+                    break;
+                case "e":
+                    break label;
+            }
         }
         saved.add(clone);
         System.out.println("Clone saved.\n");
-
 
     }
 

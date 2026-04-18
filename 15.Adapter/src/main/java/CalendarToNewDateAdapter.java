@@ -33,7 +33,7 @@ public class CalendarToNewDateAdapter implements NewDateInterface {
 
     @Override
     public int getMonth() {
-        return calendar.get(Calendar.MONTH);
+        return calendar.get(Calendar.MONTH) + 1;
     }
 
     @Override

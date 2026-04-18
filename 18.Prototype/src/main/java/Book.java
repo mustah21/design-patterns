@@ -4,16 +4,21 @@ public class Book implements Cloneable {
     private String author;
     private String publicationYear;
     private String genre;
+    private int index = -1;
 
     public Book(String title, String author, String publicationYear, String genre) {
         this.title = title;
         this.author = author;
         this.publicationYear = publicationYear;
         this.genre = genre;
+        index++;
     }
 
     public String getTitle() {
         return title;
+    }
+    public int getIndex() {
+        return index;
     }
 
     public void setTitle(String title) {
