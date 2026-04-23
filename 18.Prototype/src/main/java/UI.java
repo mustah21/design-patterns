@@ -5,7 +5,6 @@ public class UI {
     public static Scanner scan = new Scanner(System.in);
     private List<Recommendation> saved = new ArrayList<>();
 
-    // helpers
 
     private int readUserChoice(String[] options) {
         while (true) {
@@ -64,9 +63,6 @@ public class UI {
 
     private void modifyRecommendation() {
         viewRecommendations();
-        if (saved.isEmpty()) {
-            System.out.println("No recommendations saved.");
-        }
         int recIndex = -1;
         while (true) {
             System.out.print("Please enter the index you would like to modify: ");
@@ -86,10 +82,12 @@ public class UI {
             System.out.println("Enter the new target audience: ");
             clone.setTargetAudience(scan.nextLine());
         }
+
         label:
         while (true) {
             System.out.println("Add a book (press a)? Remove a book (press r): (Press e to exit)");
             String action = scan.nextLine();
+
             switch (action) {
                 case "a":
                     String[] data = bookAdding();
@@ -106,11 +104,12 @@ public class UI {
                     break;
                 case "e":
                     break label;
+
             }
         }
+
         saved.add(clone);
         System.out.println("Clone saved.\n");
-
     }
 
 
