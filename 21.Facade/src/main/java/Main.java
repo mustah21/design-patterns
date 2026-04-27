@@ -25,7 +25,7 @@ public class Main {
 
         System.out.println("\n=== Error Demo: Invalid URL ===");
         try {
-            facade.getAttributeValueFromJson("not-a-valid-url", "value");
+            facade.getAttributeValueFromJson("something", "value");
         } catch (IOException e) {
             System.out.println("Caught IOException (expected): " + e.getMessage());
         } catch (IllegalArgumentException e) {

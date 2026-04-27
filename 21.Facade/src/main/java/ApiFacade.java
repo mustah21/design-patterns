@@ -9,7 +9,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-public class ApiFacade {
+public class ApiFacade implements FacadeInterface {
 
     public String getAttributeValueFromJson(String urlString, String attributeName)
             throws IOException, IllegalArgumentException {
@@ -47,8 +47,8 @@ public class ApiFacade {
         }
     }
 
-    private String parseAttribute(String json, String attributeName)
-            throws IOException, IllegalArgumentException {
+    private String parseAttribute(String json, String attributeName) throws IOException, IllegalArgumentException {
+
         try {
             JSONParser parser = new JSONParser();
             JSONObject jsonObject = (JSONObject) parser.parse(json);
