@@ -43,7 +43,7 @@ They're typically split into three categories, as defined by the Gang of Four (G
 | Factory Method | Let subclasses decide which class to instantiate | ✅ |
 | Abstract Factory | Create families of related objects | ✅ |
 | Builder | Construct complex objects step by step | ✅ |
-| Prototype | Clone existing objects | 🔜 |
+| Prototype | Clone existing objects | ✅ |
 
 ---
 
@@ -57,7 +57,7 @@ They're typically split into three categories, as defined by the Gang of Four (G
 | Bridge | Decouple abstraction from implementation | 🔜 |
 | Composite | Treat individual objects and groups uniformly | ✅ |
 | Decorator | Add responsibilities to objects dynamically | ✅ |
-| Facade | Provide a simplified interface to a subsystem | 🔜 |
+| Facade | Provide a simplified interface to a subsystem | ✅ |
 | Flyweight | Share state to support large numbers of objects | 🔜 |
 | Proxy | Control access to another object | ✅ |
 
