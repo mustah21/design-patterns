@@ -71,7 +71,7 @@ They're typically split into three categories, as defined by the Gang of Four (G
 |---|---|---|
 | Observer | Notify dependents when state changes | ✅ |
 | Strategy | Define a family of interchangeable algorithms | ✅ |
-| Command | Encapsulate requests as objects | 🔜 |
+| Command | Encapsulate requests as objects | 🚧 |
 | Iterator | Traverse elements without exposing structure | 🔜 |
 | Template Method | Define skeleton of algorithm in a base class | ✅ |
 | Chain of Responsibility | Pass requests along a chain of handlers | ✅ |
