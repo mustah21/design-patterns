@@ -13,7 +13,7 @@ public class GenerateCodeCommand {
         this.output = output;
     }
 
-    void getCode() {
+    public void getCode() {
        String data = pixel.printRawData();
        output.setText(data);
     }

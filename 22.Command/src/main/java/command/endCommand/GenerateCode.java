@@ -1,4 +1,7 @@
-package command;
+package command.endCommand;
+
+import command.CommandInterface;
+import command.GenerateCodeCommand;
 
 public class GenerateCode implements CommandInterface {
 

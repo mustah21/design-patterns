@@ -9,19 +9,19 @@ public class CursorCommand {
         this.pixels = pixels;
     }
 
-    void up() {
+    public void up() {
         System.out.println("cursor up");
         pixels.moveCursor(0, -1);
     }
-    void down() {
+    public void down() {
         System.out.println("cursor down");
         pixels.moveCursor(0, 1);
     }
-    void left() {
+    public void left() {
         System.out.println("cursor left");
         pixels.moveCursor(-1, 0);
     }
-    void right() {
+    public void right() {
         System.out.println("cursor right");
         pixels.moveCursor(1, 0);
     }

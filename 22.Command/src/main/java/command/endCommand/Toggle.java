@@ -1,4 +1,7 @@
-package command;
+package command.endCommand;
+
+import command.CommandInterface;
+import command.TogglePixelCommand;
 
 public class Toggle implements CommandInterface {
 

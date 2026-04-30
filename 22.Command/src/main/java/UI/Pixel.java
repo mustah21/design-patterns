@@ -80,11 +80,4 @@ public class Pixel {
             pixelVisuals[cursorX][cursorY].setFill(Color.WHITE);
         }
     }
-
-
-
-
-
-
-
 }

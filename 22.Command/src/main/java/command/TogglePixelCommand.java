@@ -9,7 +9,7 @@ public class TogglePixelCommand {
         this.pixel = pixel;
     }
 
-    void toggle() {
+    public void toggle() {
         System.out.println("Toggle Pixel Command");
         pixel.toggleCurrentPixel();
     }
