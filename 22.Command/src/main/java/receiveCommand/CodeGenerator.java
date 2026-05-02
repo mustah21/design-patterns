@@ -1,14 +1,14 @@
-package command;
+package receiveCommand;
 
 import UI.Pixel;
 import javafx.scene.control.TextArea;
 
-public class GenerateCodeCommand {
+public class CodeGenerator {
 
     private Pixel pixel;
     private TextArea output;
 
-    public GenerateCodeCommand(Pixel pixel, TextArea output) {
+    public CodeGenerator(Pixel pixel, TextArea output) {
         this.pixel = pixel;
         this.output = output;
     }

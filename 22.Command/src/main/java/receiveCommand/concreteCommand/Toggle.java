@@ -1,7 +1,7 @@
-package command.endCommand;
+package receiveCommand.concreteCommand;
 
-import command.CommandInterface;
-import command.TogglePixelCommand;
+import receiveCommand.CommandInterface;
+import receiveCommand.TogglePixelCommand;
 
 public class Toggle implements CommandInterface {
 

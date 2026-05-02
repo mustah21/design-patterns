@@ -1,7 +1,7 @@
-package command.endCommand;
+package receiveCommand.concreteCommand;
 
-import command.CommandInterface;
-import command.CursorCommand;
+import receiveCommand.CommandInterface;
+import receiveCommand.CursorCommand;
 
 public class MoveCursorLeftCommand implements CommandInterface {
 

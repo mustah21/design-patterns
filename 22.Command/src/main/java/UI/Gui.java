@@ -1,7 +1,7 @@
 package UI;
 
-import command.*;
-import command.endCommand.*;
+import receiveCommand.*;
+import receiveCommand.concreteCommand.*;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -17,19 +17,19 @@ public class Gui extends Application {
     private CursorCommand c = new CursorCommand(p);
     private TogglePixelCommand tc = new TogglePixelCommand(p);
     private TextArea statusArea = new TextArea();
-    private GenerateCodeCommand gc;
+    private CodeGenerator gc = new CodeGenerator(p, statusArea);
 
 
     public void start(Stage primaryStage) throws Exception {
 
-        gc = new GenerateCodeCommand(p, statusArea);
+        gc = new CodeGenerator(p, statusArea);
         HBox v = new HBox(p.makePixels());
         HBox buttonContainer = new HBox();
         rawBtn = new Button("Raw Data");
         buttonContainer.getChildren().add(rawBtn);
         VBox mainLayout = new VBox(v, buttonContainer, statusArea);
 
-        rawBtn.setOnAction(e -> new GenerateCode(gc).execute());
+        rawBtn.setOnAction(e -> gc.getCode());
         rawBtn.setFocusTraversable(false);
 
         statusArea.setPromptText("Click 'Raw Data' to generate code...");
