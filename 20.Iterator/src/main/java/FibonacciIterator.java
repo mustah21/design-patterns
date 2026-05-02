@@ -4,8 +4,7 @@ public class FibonacciIterator implements Iterator<Integer> {
 
     private int previous = 0;
     private int current = 1;
-    private int total = 0;
-    private int limit = 10;
+    private final int limit;
     private int count = 0;
 
 
@@ -21,7 +20,7 @@ public class FibonacciIterator implements Iterator<Integer> {
     @Override
     public Integer next() {
         count++;
-        total = previous + current;
+        int total = previous + current;
         previous = current;
         current = total;
         return total;
