@@ -1,7 +1,5 @@
 # 🧩 Design Patterns
 
-> Dipping my toes in the pros and cons of different design patterns.
-
 A personal exploration of software design patterns — what they solve, when to use them, and the trade-offs they come with. Each pattern includes working code examples and notes on real-world applicability.
 
 ---
