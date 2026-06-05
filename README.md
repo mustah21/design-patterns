@@ -90,6 +90,8 @@ cd design-patterns
 ```
 
 ---
+_This readme has primarily been written by Claude. The code itself has entirely been written by the owner. Nonetheless the the final responsibility for the documentation and its correctness resides with the owner._
+
 
 **Legend:**
 - ✅ Done
